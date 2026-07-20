@@ -1,7 +1,7 @@
 export default function ExhibitCaption({
-  children,
+    children
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
-  return <span className="mono-label !tracking-[0.1em]">{children}</span>
+    return <span className="mono-label tracking-widest!">{children}</span>;
 }
