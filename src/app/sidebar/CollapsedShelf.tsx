@@ -30,7 +30,7 @@ export default function CollapsedShelf({ onExpand }: { onExpand: () => void }) {
                     />
                 ))}
             </div>
-            <span className="mono-label pb-1.5 !text-[10px] !tracking-[0.22em] [writing-mode:vertical-rl]">
+            <span className="mono-label pb-1.5 text-[10px]! tracking-[0.22em]! [writing-mode:vertical-rl]">
                 SANDBOX
             </span>
         </div>
