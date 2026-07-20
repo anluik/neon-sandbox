@@ -29,6 +29,7 @@ Rules that keep styling unified:
 - Shared visual primitives (cards, nav links, kickers, animations) live as classes in `src/styles.css`; components combine them with Tailwind utilities.
 - New pages render inside the shared shell (`src/routes/__root.tsx` → `src/app/App.tsx`: collapsible sidebar "shelf" + scrollable main pane), so they inherit the frame automatically.
 - Experiments are registered in `src/experiments.ts` (index, title, group, status, route). The sidebar and home page both render from this registry — adding an entry there is how something appears in the app.
+- Write Tailwind classes in their canonical v4 form: important marker as a **suffix** (`size-2.25!`, not `!h-[9px]`); reference design tokens with the shorthand `(--token)` (e.g. `text-(--cyan)`, `bg-(--code-bg)`), not `[var(--token)]`; and prefer scale/named utilities (`gap-3.5`, `size-1.5`, `truncate`) over arbitrary values (`gap-[14px]`, `h-[6px] w-[6px]`) whenever an equivalent exists. `eslint-plugin-better-tailwindcss` enforces and autofixes this on `pnpm format` — arbitrary `[…]` values are fine only when no canonical equivalent exists (e.g. `text-[clamp(…)]`, `[animation-delay:2.4s]`).
 
 The implemented look comes from the `HomeScene` design in the "Neandrion Design System" project on claude.ai/design (project id `095af710-c352-4292-a59b-770d8f528ce4`) — consult it before redesigning the shell or home page.
 

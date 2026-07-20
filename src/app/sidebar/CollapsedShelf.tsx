@@ -16,12 +16,12 @@ export default function CollapsedShelf({ onExpand }: { onExpand: () => void }) {
             >
                 »
             </button>
-            <div className="flex flex-1 flex-col items-center gap-[14px] pt-2">
+            <div className="flex flex-1 flex-col items-center gap-3.5 pt-2">
                 {experimentGroups.map(group => (
                     <span
                         key={group.label}
                         title={group.label}
-                        className="glow-dot !h-[9px] !w-[9px]"
+                        className="glow-dot size-2.25!"
                         style={
                             {
                                 "--dot-c": accentColor[group.accent].c

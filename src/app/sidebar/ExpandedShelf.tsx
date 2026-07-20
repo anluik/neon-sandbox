@@ -10,7 +10,7 @@ export default function ExpandedShelf({
     onCollapse: () => void;
 }) {
     return (
-        <div className="flex h-full w-[250px] flex-col px-3.5 py-4">
+        <div className="flex h-full w-62.5 flex-col px-3.5 py-4">
             <div className="flex items-center gap-2.5 px-1.5 pb-3.5">
                 <Link
                     to="/"
@@ -32,7 +32,7 @@ export default function ExpandedShelf({
                 </button>
             </div>
 
-            <div className="flex flex-1 flex-col gap-[18px] overflow-auto pt-1.5">
+            <div className="flex flex-1 flex-col gap-4.5 overflow-auto pt-1.5">
                 {experimentGroups.map(group => (
                     <div key={group.label}>
                         <div className="flex items-center gap-2 px-1.5 pb-2">
@@ -59,10 +59,10 @@ export default function ExpandedShelf({
                 ))}
             </div>
 
-            <div className="flex items-center justify-between gap-2.5 border-t border-[var(--line)] pt-3">
+            <div className="flex items-center justify-between gap-2.5 border-t border-(--line) pt-3">
                 <Link
                     to="/about"
-                    className="rounded-lg px-2 py-1.5 text-[13px] font-semibold text-[var(--t2)] no-underline transition-all duration-250 hover:text-[var(--cyan)] hover:[text-shadow:0_0_12px_var(--cyan)]"
+                    className="rounded-lg px-2 py-1.5 text-[13px] font-semibold text-(--t2) no-underline transition-all duration-250 hover:text-(--cyan) hover:[text-shadow:0_0_12px_var(--cyan)]"
                 >
                     About
                 </Link>

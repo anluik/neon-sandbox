@@ -1,5 +1,5 @@
 {
-    "name": "Neandrion",
+    "name": "neandrion",
     "private": true,
     "type": "module",
     "imports": {
@@ -42,6 +42,7 @@
         "@types/react-dom": "^19.2.0",
         "@vitejs/plugin-react": "^6.0.1",
         "eslint": "^9.20.0",
+        "eslint-plugin-better-tailwindcss": "^4.6.1",
         "jsdom": "^28.1.0",
         "prettier": "^3.8.1",
         "typescript": "^6.0.2",

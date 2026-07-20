@@ -13,7 +13,7 @@ export default function BreakbeatBars() {
             title="#009 useBreakbeat"
         >
             <span
-                className="exhibit-card flex h-[58px] items-end gap-1 px-3.5 py-2.5"
+                className="exhibit-card flex h-14.5 items-end gap-1 px-3.5 py-2.5"
                 style={
                     {
                         "--exh-c": "var(--cyan)",

@@ -49,7 +49,7 @@ export default function ThemeToggle() {
             onClick={toggleTheme}
             aria-label={label}
             title={label}
-            className="ghost-control flex items-center gap-[7px] !rounded-full !px-3 !py-1.5 text-[11px] tracking-[0.08em]"
+            className="ghost-control flex items-center gap-1.75 rounded-full! px-3! py-1.5! text-[11px] tracking-[0.08em]"
         >
             <span
                 className="glow-dot transition-all duration-400"

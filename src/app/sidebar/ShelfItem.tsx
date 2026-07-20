@@ -17,14 +17,12 @@ export default function ShelfItem({
 
     const content = (
         <>
-            <span className="mono-label w-[30px] flex-shrink-0 !tracking-[0.06em]">
+            <span className="mono-label w-7.5 shrink-0 tracking-[0.06em]!">
                 {item.index}
             </span>
-            <span className="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
-                {item.title}
-            </span>
+            <span className="min-w-0 flex-1 truncate">{item.title}</span>
             <span
-                className="glow-dot !h-[6px] !w-[6px]"
+                className="glow-dot size-1.5!"
                 style={
                     {
                         "--dot-c": statusColor[item.status]

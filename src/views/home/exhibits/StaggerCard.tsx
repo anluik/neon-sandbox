@@ -23,7 +23,7 @@ export default function StaggerCard() {
                 {lines.map(line => (
                     <span
                         key={line.w}
-                        className="h-[7px] rounded bg-[var(--magenta-soft)]"
+                        className="h-1.75 rounded bg-(--magenta-soft)"
                         style={{
                             width: line.w,
                             animation: `ns-cascade 3.6s ease ${line.delay} infinite`
