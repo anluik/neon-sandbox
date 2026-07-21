@@ -4,10 +4,12 @@ import type { Experiment, ExperimentGroup } from "#/experiments";
 
 export default function ShelfItem({
     item,
-    group
+    group,
+    onNavigate
 }: {
     item: Experiment;
     group: ExperimentGroup;
+    onNavigate: () => void;
 }) {
     const content = (
         <>
@@ -24,7 +26,11 @@ export default function ShelfItem({
 
     if (item.to) {
         return (
-            <Link to={item.to} className={`shelf-link accent-${group.accent}`}>
+            <Link
+                to={item.to}
+                onClick={onNavigate}
+                className={`shelf-link accent-${group.accent}`}
+            >
                 {content}
             </Link>
         );

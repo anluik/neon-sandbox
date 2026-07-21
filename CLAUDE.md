@@ -50,6 +50,7 @@ The implemented look comes from the `HomeScene` design in the "Neandrion Design 
 ## Code structure (firm preferences — follow these)
 
 - One component per file, and the file is named after the component. Multiple components in one file are acceptable only rarely, when they are super closely related and only one of them — the main component — is exported. Default to separate files even then.
+- Prefer using `const` instead of `function` when declaring components. Each component is exported as default at the end of the file.
 - `src/routes/` holds only thin TanStack Router route files: route config plus an imported view component. No UI code in route files.
 - `src/routes/__root.tsx` only configures the app — the document shell (`<head>`, body classes), the pre-hydration theme script, global contexts/providers, devtools — and calls the app entry point. It builds no layout itself.
 - `src/app/` is the application package: `App.tsx` is the entry point that builds the layout; layout-only components live beside it in dedicated subfolders (e.g. `src/app/sidebar/`).

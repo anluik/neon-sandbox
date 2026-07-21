@@ -50,7 +50,7 @@ export default function HomeView() {
             <div className="bloom bloom-warm left-[-8%] top-[6%] h-95 w-120" />
             <div className="bloom bloom-cool right-[-6%] top-[30%] h-90 w-110 [--bloom-dur:12s] [--bloom-delay:2.4s]" />
 
-            <div className="relative z-2 flex min-h-dvh flex-col items-center justify-center px-6 py-16 text-center md:px-15">
+            <div className="relative z-2 flex min-h-full flex-col items-center justify-center px-6 py-16 text-center md:px-15">
                 <div className="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-(--cyan) [text-shadow:0_0_12px_var(--cyan-soft)]">
                     React playground · est. sundown
                 </div>
